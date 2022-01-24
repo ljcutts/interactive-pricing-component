@@ -1,38 +1,259 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@700;800&family=Manrope:wght@700&family=Outfit:wght@200&family=Space+Mono:ital,wght@0,700;1,400&display=swap');
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+font-family: 'Manrope', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+ background-image: url("../public/images/bg-pattern.svg");
+ background-repeat: no-repeat;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.img-container{
+  margin: 0 auto;
+  max-width: 400px;
+  margin-top: 5.5rem;
+  height: 180px;
+}
+.circles{
+  margin-left: 8rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.img-container h1{
+  position: relative;
+  bottom: 8rem;
+  font-size: 22px;
+ padding-left: 2.2rem;
+ white-space: nowrap;
+ max-width: auto;
+}
+
+.img-container p{
+  position: relative;
+  font-size: 15px;
+  bottom: 7rem;
+  color: rgba(0,0,0,0.3);
+  margin-left: 6rem;
+}
+
+.credit{
+  padding-left: 1rem;
+ 
+}
+
+.description{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+height: 100px;
+}
+
+.subscription-container{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 0 auto;
+  max-width: 330px;
+  height: 500px;
+  background: white;
+  border-radius: 0.8rem;
+  border: none;
+  box-shadow: 0px 3px 16px 3px rgba(0,0,0,0.1);
 }
 
-.App-link {
-  color: #61dafb;
+.top{
+  display: flex;
+  flex-direction: column;
+ align-items: center;
+  height: 295px;
+  width: 100%;
+  background: white;
+  border-top-left-radius: 0.8rem;
+  border-top-right-radius: 0.8rem;
+  padding-top: 2rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.top p{
+  font-size: 13px;
+  word-spacing: 0.1rem;
+  text-align: center;
+  padding-bottom: 2.5rem;
+  opacity: 0.4;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  margin-right: 15px;
+  width: 85%;
+  height: 7px;
+  background: hsl(224, 65%, 95%);
+  border-radius: 5px;
+  background-image: linear-gradient(hsl(174, 77%, 80%), hsl(174, 77%, 80%));
+  background-size: 50% 100%;
+  background-repeat: no-repeat;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background:  hsl(174, 86%, 45%);;
+  cursor: ew-resize;
+  box-shadow: 0px 3px 16px 3px hsl(174, 86%, 45%);;
+  transition: background .3s ease-in-out;
+  background-image: url("../public/images/icon-slider.svg");
+  background-repeat: no-repeat;
+  background-position: 49% 50%;
+  cursor: pointer;
+}
+
+
+
+input[type=range]::-webkit-slider-runnable-track  {
+  -webkit-appearance: none;
+  box-shadow: none;
+  border: none;
+}
+
+.subscription-amount{
+  margin-top: 3.5rem;
+  padding-right: 1rem;
+  padding-bottom: 2rem;
+}
+
+.subscription-amount span{
+ position: relative;
+ bottom: 0.4rem;
+}
+
+h1 span{
+  font-size: 15px;
+  opacity: 0.4;
+}
+
+.underline{
+  width: 100%;
+  height: 1px;
+  background: gray;
+  opacity: 0.2;
+}
+
+.billing{
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 2rem;
+}
+.monthly{
+  display: flex;
+  align-items: center;
+}
+.monthly span{
+font-size: 12px;
+ padding-right: 0.5rem;
+ opacity: 0.5;
+}
+
+.monthly button{
+  border: none;
+  border-radius: 1.5rem;
+  width: 45px;
+  height: 25px;
+  margin-right: 1rem;
+  background: hsl(224, 65%, 95%);
+  padding: 0;
+  padding-top: 0.1rem;
+  cursor: pointer;
+}
+
+.monthly button:hover{
+  background:hsl(174, 77%, 80%);
+}
+
+.monthly button button{
+  width: 20px;
+  height: 20px;
+  background: white;
+  border-radius: 50%;
+}
+
+.toggle{
+  transform: translateX(18px);
+   transition: .3s ease-in-out;
+}
+
+.toggle2{
+  transform: translateX(0px);
+  transition: .3s ease-in-out;
+}
+
+.monthly button button:hover{
+  background: white;
+}
+
+.yearly{
+  display: flex;
+  align-items: center;
+}
+
+.yearly span{
+  font-size: 12px;
+ padding-right: 0.5rem;
+ opacity: 0.5;
+}
+
+.yearly button{
+  font-size: 13px;
+  border: none;
+  border-radius: 1.5rem;
+  width: 45px;
+  height: 25px;
+  margin-right: 1rem;
+  background: hsl(14, 92%, 95%);
+}
+
+.yearly button h1{
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  padding-left: 0.5rem;
+  font-size: 11px;
+  color: hsl(15, 100%, 70%);
+  font-weight: 800;
+}
+
+.bottom{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2rem;
+}
+
+.bottom-component {
+  margin-bottom: 0.5rem;
+}
+
+.bottom-component span{
+  padding-left: 1rem;
+  font-size: 13px;
+  opacity: 0.5;
+}
+
+.bottom button{
+  font-size: 13px;
+  border: none;
+  border-radius: 1.5rem;
+  width: 170px;
+  height: 35px;
+  margin-left: 1rem;
+  background: hsl(227, 35%, 25%);
+  margin-top: 1.1rem;
+  color: hsl(226, 100%, 87%);
+  cursor: pointer;
 }
