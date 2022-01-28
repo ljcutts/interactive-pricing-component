@@ -69,7 +69,7 @@ I want to continue getting more better with React Hooks and get even better with
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@ljcutts](https://www.frontendmentor.io/profile/yourusername)
 
 
 
