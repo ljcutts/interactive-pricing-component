@@ -73,13 +73,13 @@ function App() {
       <div className="img-container">
         <img src="/images/pattern-circles.svg" alt="" className="circles" />
         <h1>Simple, traffic-based pricing</h1>
-        <p> Sign-up for our 30-day trial. </p>
+        <p className='sign-up'> Sign-up for our 30-day trial. </p>
         <p className="credit">No credit card required.</p>
       </div>
       <div className="subscription-container">
         <div className="top">
           <p>{pageviews} PAGEVIEWS</p>
-          <input
+          <input className='slider'
             type="range"
             value={value}
             min="0"
