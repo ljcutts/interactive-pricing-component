@@ -64,7 +64,7 @@ I want to continue getting more better with React Hooks and get even better with
 ### Useful resources
 
 - [w3Schools](https://www.w3schools.com) - Web development dictionary for HTML, CSS, Javascript
-- [Dev Blog](https://nikitahl.com/style-range-input-css) - This was the biggest and learning how to style and add functionality to an input range type html element.
+- [Dev Blog](https://nikitahl.com/style-range-input-css) - This was the biggest help in learning how to style and add functionality to an input range type html element.
 
 
 ## Author
